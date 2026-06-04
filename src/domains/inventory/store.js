@@ -1,4 +1,4 @@
-import { reactive } from 'vue'
+import {computed, reactive} from 'vue'
 // State
 
 const inventory = reactive([{
@@ -38,6 +38,7 @@ const inventory = reactive([{
     minimumAmount: 4
 }]);
 
-// Getters
+// Getters and Setters
+export const getAllProducts = computed(() => { return inventory; })
 
-// Setters
+// Actions
