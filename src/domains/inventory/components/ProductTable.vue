@@ -9,9 +9,6 @@ const products = getAllProducts;
     <tbody>
       <tr>
         <th>
-          ID
-        </th>
-        <th>
           Artikel
         </th>
         <th>
