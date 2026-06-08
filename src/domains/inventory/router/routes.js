@@ -1,6 +1,7 @@
 import Main from '@/domains/inventory/views/Main.vue'
 import AddProduct from '@/domains/inventory/views/AddProduct.vue'
 import EditProduct from "@/domains/inventory/views/EditProduct.vue";
+import OrderList from "@/domains/inventory/views/OrderList.vue";
 
 export const routes = [{
     path: '/',
@@ -14,4 +15,8 @@ export const routes = [{
     path: '/products/edit/:id',
     name: 'editProduct',
     component: EditProduct
+}, {
+    path: '/products/orderlist',
+    name: 'orderList',
+    component: OrderList
 }];

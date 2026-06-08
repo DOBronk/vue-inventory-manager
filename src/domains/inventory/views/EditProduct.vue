@@ -7,7 +7,6 @@ const router = useRouter();
 const route = useRoute();
 const product = getProductById(Number(route.params.id.valueOf()));
 
-
 let changedProduct = { id: product.id, price: product.price, name: product.name, actualAmount: product.actualAmount, minimumAmount: product.minimumAmount };
 
 function edit(){

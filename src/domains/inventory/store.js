@@ -42,9 +42,10 @@ let id = 7;
 
 // Getters and Setters
 export const getAllProducts = computed(() => { return inventory; })
-export const getProductById = (id) => { return inventory[id]; };
+export const getProductOrderList = computed(() => { return inventory.filter(p => p.actualAmount < p.minimumAmount); })
+export const getProductById = (id) => { return inventory[id - 1]; };
 
 // Actions
 export const addProduct = (product) => { inventory.push(product);};
-export const editProduct = (product) => { inventory[product.id] = product; };
+export const editProduct = (product) => { inventory[product.id - 1] = product; };
 export const generateId = () => { return ++id;};
