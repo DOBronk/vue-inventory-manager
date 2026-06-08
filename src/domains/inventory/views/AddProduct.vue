@@ -1,7 +1,7 @@
 <script setup>
 import ProductForm from "@/domains/inventory/components/ProductForm.vue"
 import { addProduct, generateId } from "@/domains/inventory/store.js";
-import {useRouter} from "vue-router";
+import { useRouter } from "vue-router";
 
 const router = useRouter();
 

@@ -42,8 +42,9 @@ let id = 7;
 
 // Getters and Setters
 export const getAllProducts = computed(() => { return inventory; })
-export const getProductById = computed((id) => { return inventory[id]; });
+export const getProductById = (id) => { return inventory[id]; };
 
 // Actions
 export const addProduct = (product) => { inventory.push(product);};
+export const editProduct = (product) => { inventory[product.id] = product; };
 export const generateId = () => { return ++id;};
