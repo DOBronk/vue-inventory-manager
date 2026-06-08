@@ -1,6 +1,5 @@
 <script setup>
 const product = defineModel();
-alert(product.value.minimumAmount);
 </script>
 
 <template>
